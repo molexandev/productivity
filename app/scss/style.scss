@@ -4,37 +4,202 @@
 @import 'global';
 @import 'libs';
 
-// .header {
-// }
-// .navigation {
-//    &__inner {
-//    }
-//    &__left {
-//    }
-//    &__right {
-//    }
-//    &__socials {
-//    }
-//    &__link {
-//    }
-//    &__svg {
-//    }
-//    &__btn {
-//    }
-// }
-// .logo {
-//    &__img {
-//    }
-// }
-// .menu {
-//    &__list {
-//    }
-//    &__item {
-//    }
-//    &__link {
-//    }
-// }
+.header {
+   max-height: 80px;
+}
+.navigation {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px 117px;
+   }
+   &__left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 0 73px;
+   }
+   &__right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0 44px;
+   }
+   &__socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0 37px;
+   }
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__svg {
+      width: 17px;
+      height: 17px;
+      display: block;
+      padding: 0;
+      fill: #b7bac6;
+      transition: all 0.2s;
+      &:hover {
+         fill: #5e81fe;
+      }
+   }
+   &__btn {
+      width: 113px;
+      height: 43px;
+      background-color: #d6e1fd;
+      color: #3a79ff;
+      font-size: 0.8125rem;
+      @extend %quicksand-700;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+         background-color: $hover;
+         color: #d6e1fd;
+      }
+   }
+}
+.menu {
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0 42px;
+   }
+   &__item {
+   }
+   &__link {
+      color: #697ca6;
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      transition: all 0.2s;
+      &:hover {
+         color: $hover;
+      }
+   }
+}
 
+.top {
+   &__wrapper {
+      background-color: #f3f6fe;
+      position: relative;
+      z-index: 10;
+      &::before {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-image: url(../images/top-clouds.avif);
+         background-repeat: no-repeat;
+         z-index: -10;
+      }
+      &::after {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 100%;
+         height: 100%;
+         background-image: url(../images/top-decor.avif);
+         background-position: bottom right;
+         z-index: -20;
+         background-repeat: no-repeat;
+      }
+   }
+   &__slider {
+      padding-top: 92px;
+      padding-bottom: 212px;
+   }
+   &__slider-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   &__slider-subtitle {
+      color: #3d4f9f;
+      font-size: 0.625rem;
+      @extend %roboto-500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+   }
+   &__slider-title {
+      color: #3d4f9f;
+      font-size: 3rem;
+      @extend %quicksand-300;
+      margin-bottom: 28px;
+      span {
+         @extend %quicksand-400;
+      }
+   }
+   &__slider-text {
+      color: #8d96bd;
+      font-size: 0.9375rem;
+      @extend %roboto-400;
+      line-height: 1.8125rem;
+      text-align: center;
+      margin-bottom: 20px;
+      max-width: 450px;
+   }
+   &__slider-video-link {
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: all 0.2s;
+      &:hover {
+         background-color: $hover;
+         .top__slider-svg {
+            fill: #fff;
+         }
+      }
+   }
+   &__slider-svg {
+      width: 11px;
+      height: 11px;
+      fill: #5e81fe;
+   }
+   .slick-dots {
+      position: relative;
+      bottom: -11.375rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 12px;
+      button {
+         font-size: 0;
+         background-color: #d2d6e1;
+         border-radius: 50%;
+         padding: 0;
+         width: 8px;
+         height: 8px;
+      }
+      li.slick-active {
+         button {
+            background-color: #6185f8;
+         }
+      }
+   }
+}
+
+//
+//
+//
+//
+//
 .arrow-go-up {
    position: relative;
    &__svg {

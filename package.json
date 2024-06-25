@@ -9,8 +9,10 @@
   "author": "osm",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "browser-sync": "^2.27.11",
     "del": "^6.1.1",
+    "fancybox": "^2.1.8",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
@@ -26,5 +28,8 @@
     "gulp-webp": "^4.0.1",
     "jquery": "^3.6.3",
     "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

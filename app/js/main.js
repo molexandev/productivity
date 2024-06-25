@@ -1,4 +1,14 @@
-$(function () {});
+$(function () {
+   $('.top__slider-inner').slick({
+      dots: true,
+      arrows: false,
+      speed: 500,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      draggable: true,
+   });
+});
 
 // Функція для прокрутки сторінки наверх
 function scrollToTop() {
