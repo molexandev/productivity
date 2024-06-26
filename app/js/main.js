@@ -8,6 +8,18 @@ $(function () {
       autoplaySpeed: 3000,
       draggable: true,
    });
+
+   //
+
+   $('.resources__slider').slick({
+      dots: true,
+      arrows: true,
+      speed: 500,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      draggable: true,
+   });
 });
 
 // Функція для прокрутки сторінки наверх

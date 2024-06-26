@@ -1,7 +1,7 @@
 body {
    height: 100vh;
    font-size: 0.9375rem;
-   color: $text-color;
+   color: $default;
    @extend %quicksand-500;
 }
 a {

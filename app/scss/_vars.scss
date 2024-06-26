@@ -1,23 +1,7 @@
 $default: #8d96bd;
-$text-color: #8d96bd;
+$title-color: #3d4f9f;
 $hover: #5e81fe;
 $accent: #ffca42;
-$svg: #b6bac7;
-
-%btn {
-   @extend %quicksand-700;
-   font-size: 0.8125rem;
-   color: #fff;
-   background-color: #d2e1ff;
-   border: none;
-   height: 2.6875rem;
-   cursor: pointer;
-   transition: all 0.2s;
-   &:hover {
-      color: $accent;
-      background-color: $hover;
-   }
-}
 
 %quicksand-500 {
    font-family: 'Quicksand-Medium', sans-serif;
@@ -57,4 +41,14 @@ $svg: #b6bac7;
 %quicksand-300 {
    font-family: 'Quicksand-Light', sans-serif;
    font-weight: 400;
+}
+
+%subtitle {
+   color: $title-color;
+   text-align: center;
+   font-size: 10px;
+   letter-spacing: 0.0625rem;
+   text-transform: uppercase;
+   @extend %roboto-500;
+   margin-bottom: 20px;
 }
